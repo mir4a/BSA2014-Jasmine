@@ -16,7 +16,7 @@ Man.prototype.changeName = function(name) {
 Man.prototype.grow = function(years) {
 	if (typeof years === 'undefined'){
 		this.age++;
-	} else if (typeof years === 'number')
+	} else if (typeof years === 'number'){
 		this.age += years;
 	} else {
 		throw new Error('Years should be a number');
