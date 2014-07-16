@@ -1,7 +1,7 @@
 BSA2014-Jasmine
 ===============================
 
-##Hometask boilerplate for JS group after Backbone lecture.
+##Hometask boilerplate for JS group after Frontend Testing lecture.
 
 ###How to run tests
 - Install the [node.js](http://nodejs.org/)
@@ -23,6 +23,7 @@ SpecRunner.html
 - Add tests to Student.
 - Add new entity Professor, which should have several new properties and methods.
 - Add tests on Professor.
+- Add couple of spies tests to any functions.
 
 ###What should be tested?
 - Invoking different methods with different parameters.
