@@ -1,15 +1,20 @@
 describe('Student should', function() {
-  var man;
   var student;
 
   beforeEach(function() {
-    man = new Student();
+    student = new Student();
   });
 
   it('inherit properties from Man', function(){
-    expect(man.hasOwnProperty('name')).toBe(true);
-    expect(man.hasOwnProperty('age')).toBe(true);
-    expect(man.hasOwnProperty('gender')).toBe(true);
+    expect(student.hasOwnProperty('name')).toBe(true);
+    expect(student.hasOwnProperty('age')).toBe(true);
+    expect(student.hasOwnProperty('gender')).toBe(true);
+  });
+
+  it('throw an error if property of takeExams not boolean', function(){
+    expect(function(){
+      student.takeExams('fail exam')
+    }).toThrowError('areResultsFine should be a boolean value')
   });
 
   /***
