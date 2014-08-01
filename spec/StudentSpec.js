@@ -15,6 +15,9 @@ describe('Student should', function() {
     expect(student.name).toBe('Vasiliy');
     expect(student.age).toBe(5);
     expect(student.gender).toBe('Male');
+    expect(student.school).toBe('MIT');
+    expect(student.semester).toBe(1);
+    expect(student.getsPayment).toBe(true);
   });
 
   it('has own properties', function(){
