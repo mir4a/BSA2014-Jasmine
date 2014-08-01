@@ -1,5 +1,4 @@
 function Student(options){
-	Man.prototype.constructor.call(this, options);
 	this.school = 'MIT';
 	this.semester = 1;
 	this.getsPayment = true;
