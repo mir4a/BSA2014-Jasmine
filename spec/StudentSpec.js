@@ -32,11 +32,18 @@ describe('Student should', function() {
     }).toThrowError('areResultsFine should be a boolean value')
   });
 
+});
 
+describe('Student should take exams and ', function() {
+  var student;
 
-  /***
-    more tests should be added
-  **/
+  beforeEach(function() {
+    student = new Student({getsPayment: false});
+  });
 
-
+  it('get payment and increase semester', function() {
+    student.takeExams(true);
+    expect(student.getsPayment).toBe(true);
+    expect(student.semester).toBeGreaterThan(1);
+  });
 });
