@@ -1,7 +1,7 @@
 function Student(options){
   options = options || {};
 	this.school = options.school || 'MIT';
-	this.semester = options.school || 1;
+	this.semester = options.semester || 1;
 	this.getsPayment = options.getsPayment || true;
 }
 

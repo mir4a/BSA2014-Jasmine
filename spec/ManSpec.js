@@ -1,6 +1,5 @@
 describe('Man should', function() {
   var man;
-  var student;
 
   beforeEach(function() {
     man = new Man();

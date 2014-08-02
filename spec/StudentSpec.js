@@ -35,13 +35,17 @@ describe('Student should', function() {
 });
 
 describe('Student should take exams and ', function() {
-  var student;
+  var student = new Student();
 
   beforeEach(function() {
-    student = new Student({getsPayment: false});
+    student.getsPayment = false;
   });
 
-  it('get payment and increase semester', function() {
+  afterEach(function() {
+    student.getsPayment = true;
+  });
+
+  it('get payment and increase semester if exam success', function() {
     student.takeExams(true);
     expect(student.getsPayment).toBe(true);
     expect(student.semester).toBeGreaterThan(1);
