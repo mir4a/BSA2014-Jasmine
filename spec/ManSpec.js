@@ -22,8 +22,5 @@ describe('Man should', function() {
     expect(customMan.name).toEqual('Sanya');
   });
 
-  /***
-    more tests should be added
-  **/
 
 });
