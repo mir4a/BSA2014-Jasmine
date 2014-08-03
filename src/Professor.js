@@ -22,5 +22,5 @@ Professor.prototype.checkNobelPrize = function() {
 Professor.prototype.makeScientificWork = function() {
   this.scientificWorks++;
   this.checkNobelPrize();
-  this.age++;
+  this.grow();
 };
