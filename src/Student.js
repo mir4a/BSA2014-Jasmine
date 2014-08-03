@@ -1,8 +1,8 @@
 function Student(options){
-	Man.prototype.constructor.call(this, options);
-	this.school = 'MIT';
-	this.semester = 1;
-	this.getsPayment = true;
+  options = options || {};
+	this.school = options.school || 'MIT';
+	this.semester = options.semester || 1;
+	this.getsPayment = options.getsPayment || true;
 }
 
 Student.prototype = new Man();
